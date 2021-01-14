@@ -1,0 +1,37 @@
+/*----------------------------------------*/
+/*  22 - Components - Instagram
+/*----------------------------------------*/
+.kenne-instagram_area{
+    padding: 95px 0;
+    .kenne-section_area{
+        text-align: center;
+        padding-bottom: 40px;
+        > p{
+            max-width: 40%;
+            margin: 0 auto;
+            @include breakpoint(max-xl_device){
+                max-width: 35%;
+            }
+            @include breakpoint(max-lg_device){
+                max-width: 45%;
+            }
+            @include breakpoint(max-sm_device){
+                max-width: 70%;
+            }
+            @include breakpoint(max-xs_device){
+                max-width: 100%;
+            }
+        }
+    }
+    .instagram-slider{
+        .single-item{
+            .instagram-img{
+                > a{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

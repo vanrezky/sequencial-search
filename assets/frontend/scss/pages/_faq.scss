@@ -1,0 +1,74 @@
+/*----------------------------------------*/
+/*  36 - Pages - FAQ
+/*----------------------------------------*/
+.frequently-area {
+	padding: 95px 0 85px;
+	.frequently-content {
+		.frequently-desc {
+			margin-bottom: 25px;
+			h3 {
+				text-transform: capitalize;
+				padding-bottom: 15px;
+				line-height: 32px;
+				font-size: 25px;
+                margin-bottom: 0;
+                font-weight: 400;
+				@include breakpoint(max-sm_device){
+					font-size: 20px;
+				}
+			}
+			p {
+				margin: 0;
+				font-size: 14px;
+			}
+		}
+	}
+	.frequently-accordion {
+		.card {
+			border-radius: 0;
+			margin-bottom: 15px;
+		}
+		.card-header {
+			padding: 0;
+			margin-bottom: 0;
+			background-color: $white-smoke_color;
+			border: 0;
+			a {
+				padding: 15px 10px 15px 25px;
+				text-transform: capitalize;
+				line-height: 24px;
+				cursor: pointer;
+                display: block;
+                font-size: 16px;
+                font-weight: 400;
+				@include breakpoint(max-sm_device){
+					font-size: 14px;
+				}
+				&.collapsed {
+					&:before {
+						content: "\f489";
+						font-family: "Ionicons";
+						font-weight: 600;
+						position: absolute;
+						right: 15px;
+						top: 15px;
+						@include breakpoint (max-xxs_device) {
+							display: none;
+						}
+					}
+				}
+				&:after {
+					content: "\f462";
+					font-family: "Ionicons";
+					font-weight: 600;
+					position: absolute;
+					right: 15px;
+					top: 15px;
+					@include breakpoint (max-xxs_device) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

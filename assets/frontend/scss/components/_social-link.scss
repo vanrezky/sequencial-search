@@ -1,0 +1,32 @@
+/*----------------------------------------*/
+/*  18 - Components - Social Link
+/*----------------------------------------*/
+.kenne-social_link {
+	padding-top: 25px;
+	> ul {
+		> li {
+			display: inline-block;
+			padding-right: 10px;
+			@include breakpoint(max-xs_device){
+				padding-right: 5px;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+			> a {
+				border: 1px solid $border-color;
+				font-size: 16px;
+				display: block;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				@include breakpoint(max-xs_device){
+					width: 32px;
+					height: 32px;
+					line-height: 32px;
+				}
+			}
+		}
+	}
+}

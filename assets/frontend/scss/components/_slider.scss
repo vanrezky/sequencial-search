@@ -1,0 +1,156 @@
+/*----------------------------------------*/
+/*  11 - Components - Slider
+/*----------------------------------------*/
+.home-slider {
+    .slide-item{
+		@include breakpoint(max-xs_device){
+			background-position: left;
+		}
+        .slide-content{
+            position: absolute;
+            top: 50%;
+            left: auto;
+            transform: translateY(-50%);
+            > span{
+                display: block;
+                padding-bottom: 15px;
+				font-size: 18px;
+				@include breakpoint(max-md_device){
+					font-size: 14px;
+				}
+            }
+            > h2{
+                font-size: 60px;
+                font-weight: 400;
+				margin-bottom: 30px;
+				line-height: 1.2;
+				font-family: 'Prata', serif;
+				@include breakpoint(max-md_device){
+					font-size: 40px;
+				}
+				@include breakpoint(max-xs_device){
+					font-size: 30px;
+				}
+            }
+            > p{
+                margin-bottom: 95px;
+				font-size: 16px;
+				@include breakpoint(max-md_device){
+					font-size: 14px;
+					margin-bottom: 30px;
+				}
+                &.short-desc{
+					max-width: 60%;
+					@include breakpoint(max-xs_device){
+						max-width: 85%;
+					}
+                }
+                &.short-desc-2{
+                    max-width: 100%;
+                }
+            }
+        }
+	}
+	.tty-slick-text-btn{
+		@include breakpoint(max-xs_device){
+			display: none !important;
+		}
+	}
+}
+.white-color{
+    span,
+    h2,
+    p{
+        color: $white-color;
+    }
+}
+
+.bg-1,
+.bg-2 {
+	background-image: url('../images/slider/1-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 940px;
+	@include breakpoint(max-md_device){
+		min-height: 430px;
+	}
+	@include breakpoint(max-xs_device){
+		min-height: 380px;
+	}
+}
+.bg-2 {
+	background-image: url('../images/slider/1-2.jpg');
+}
+.bg-3,
+.bg-4 {
+	background-image: url('../images/slider/2-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 695px;
+	@include breakpoint(max-md_device){
+		min-height: 430px;
+	}
+	@include breakpoint(max-xs_device){
+		min-height: 380px;
+	}
+}
+.bg-4 {
+	background-image: url('../images/slider/2-2.jpg');
+}
+.bg-5,
+.bg-6 {
+	background-image: url('../images/slider/1-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 635px;
+	@include breakpoint(max-md_device){
+		min-height: 430px;
+	}
+	@include breakpoint(max-xs_device){
+		min-height: 380px;
+	}
+}
+.bg-6 {
+	background-image: url('../images/slider/1-2.jpg');
+}
+
+/* ---Slider Progress Bar--- */
+.slider-progress {
+	background: rgba(0, 0, 0, .3);
+	-webkit-animation: initial;
+	animation: initial;
+	height: 5px;
+	left: 0;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	z-index: 4;
+}
+
+.slick-current {
+    .slider-progress {
+        -webkit-animation: timebar 8s ease-in-out 0s 1 backwards;
+        animation: timebar 8s ease-in-out 0s 1 backwards;
+    }
+}
+
+// Keyframes
+@-webkit-keyframes timebar {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@keyframes timebar {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}

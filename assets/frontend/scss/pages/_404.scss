@@ -1,0 +1,95 @@
+/*----------------------------------------*/
+/*  41 - Pages - 404
+/*----------------------------------------*/
+.error-content_wrapper{
+    padding: 60px 0 100px;
+    @include breakpoint(max-xs_device){
+        padding: 75px 0 100px;
+    }
+    .error-area{
+        .error {
+            h1{
+                font-size: 200px;
+                font-weight: 900;
+                letter-spacing: 1rem;
+                line-height: 1.1;
+                margin-bottom: 30px;
+                @include breakpoint(max-xs_device){
+                    font-size: 120px;
+                }
+            }
+            h2{
+                font-size: 25px;
+                padding-bottom: 10px;
+                line-height: 1.2;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+            .btn {
+                position: relative;
+                @extend %basetransition;
+                color: $white-color;
+                font-size: 16px;
+                min-width: 184px;
+                min-height: 55px;
+                line-height: 55px;
+                margin-bottom: 6px;
+                padding: 0 10px;
+                border: none;
+                border-radius: 0;
+                @include breakpoint(max-md_device){
+                    min-width: 170px;
+                    min-height: 50px;
+                    line-height: 50px;
+                }
+                @include breakpoint(max-sm_device){
+                    min-width: 160px;
+                    min-height: 45px;
+                    line-height: 45px;
+                }
+                @include breakpoint(max-xs_device){
+                    min-width: 150px;
+                }
+                &:after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -6px;
+                    height: 3px;
+                    width: 100%;
+                }
+                &:hover{
+                    background-color: #111;
+                    color: $white-color;
+                    &:after{
+                        background-color: #111;
+                    }
+                }
+            }
+            .searchform{
+                display: flex;
+                justify-content: flex-start;
+                &.mb--50 {
+                    margin-bottom: 50px;
+                }
+                input{
+                    &.searchform__input{
+                        border: 1px solid #eee;
+                        height: 45px;
+                        width: 100%;
+                        padding-left: 15px;
+                    }
+                }
+                button{
+                    &.searchform__submit{
+                        border: none;
+                        color: $white-color;
+                        width: 70px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+/*----------------------------------------*/
+/*  26 - Section - Footer
+/*----------------------------------------*/
+.kenne-footer_area {
+	.footer-top_area {
+		padding: 90px 0;
+		border-bottom: 1px solid $border-color;
+		.newsletter-area{
+			@include breakpoint(max-md_device){
+				padding-bottom: 60px;
+			}
+			@include breakpoint(max-xs_device){
+				padding-bottom: 0;
+			}
+			.newsletter-logo {
+				padding-bottom: 25px;
+			}
+		}
+		.footer-widgets_wrap{
+			[class*="col-"]{
+				@include breakpoint(max-xs_device){
+					margin-top: 30px;
+				}
+			}
+			.footer-widgets_title {
+				> h4 {
+					padding-bottom: 40px;
+					font-size: 22px;
+					margin-bottom: 0;
+				}
+				&.widgets-info_title {
+					> h4 {
+						padding-bottom: 25px;
+					}
+				}
+			}
+			.widget-short_desc {
+				> p {
+					margin-bottom: 0;
+					padding-bottom: 25px;
+				}
+			}
+			.footer-widgets {
+				> ul {
+					> li {
+						padding-bottom: 10px;
+						&:last-child {
+							padding-bottom: 0;
+						}
+						> a {
+							@include breakpoint(normal) {
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* ---Footer Bottom--- */
+	.footer-bottom_area {
+		padding: 20px 0;
+		.copyright {
+			font-size: 14px;
+			line-height: 30px;
+			@include breakpoint(max-sm_device){
+				text-align: center;
+				padding-bottom: 14px;
+			}
+			> span {
+				> a {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.payment{
+			text-align: right;
+			@include breakpoint(max-sm_device){
+				text-align: center;
+			}
+		}
+	}
+}

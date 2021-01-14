@@ -1,0 +1,22 @@
+/*----------------------------------------*/
+/*  16 - Components - Brand
+/*----------------------------------------*/
+.brand-area{
+    &.pt-90{
+        padding-top: 90px;
+    }
+    .brand-nav{
+        &.border-top{
+            border-top: 1px solid $border-color;
+        }
+        &.border-bottom{
+            border-bottom: 1px solid $border-color;
+        }
+        .brand-slider{
+            overflow: hidden;
+            .brand-item{
+                padding: 45px 0 40px;
+            }
+        }
+    }
+}

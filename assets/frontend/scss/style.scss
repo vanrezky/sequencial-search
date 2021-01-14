@@ -1,0 +1,101 @@
+/******************************
+
+INDEX:
+
+    00 - Base - Typography
+    01 - Base - Variables
+    02 - Base - Mixins
+
+    03 - Utilities - Helper
+    04 - Utilities - Color
+
+    10 - Components - Navigation
+    11 - Components - Slider
+    12 - Components - Button
+    13 - Components - Banner
+    14 - Components - Product
+    15 - Components - Product Tab
+    16 - Components - Brand
+    17 - Components - Form
+    18 - Components - Social Link
+    19 - Components - Animation
+    20 - Components - Breadcrumb
+    21 - Components - Modal
+    22 - Components - Instagram
+    23 - Components - Service
+
+    25 - Section - Header
+    26 - Section - Footer
+
+    29 - Pages - Blog
+    30 - Pages - Shop
+    31 - Pages - Single Product
+    32 - Pages - About Us
+    33 - Pages - Cart
+    34 - Pages - Checkout
+    35 - Pages - Compare
+    36 - Pages - FAQ
+    37 - Pages - Wishlist
+    38 - Pages - My Account
+    39 - Pages - Login | Register
+    40 - Pages - Contact
+    41 - Pages - 404
+    42 - Pages - About Us
+
+******************************/
+
+/*
+
+    Primary Color:     #df2121;
+    Text Color:        #242424;
+    Border Color:      #e5e5e5;
+
+*/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Prata|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+//Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typography';
+
+// Utilities
+@import 'utilities/helper';
+@import 'utilities/color';
+
+// Components
+@import 'components/navigation';
+@import 'components/slider';
+@import 'components/button';
+@import 'components/service';
+@import 'components/banner';
+@import 'components/product';
+@import 'components/product-tab';
+@import 'components/brand';
+@import 'components/form';
+@import 'components/social-link';
+@import 'components/animation';
+@import 'components/breadcrumb';
+@import 'components/modal';
+@import 'components/instagram';
+
+// Section
+@import 'section/header';
+@import 'section/footer';
+
+// Pages
+@import 'pages/blog';
+@import 'pages/shop';
+@import 'pages/404';
+@import 'pages/contact';
+@import 'pages/faq';
+@import 'pages/my-account';
+@import 'pages/login-register';
+@import 'pages/cart';
+@import 'pages/wishlist';
+@import 'pages/checkout';
+@import 'pages/single-product';
+@import 'pages/compare';
+@import 'pages/about-us';
+@import 'pages/coming-soon';

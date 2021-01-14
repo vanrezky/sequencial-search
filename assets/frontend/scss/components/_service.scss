@@ -1,0 +1,52 @@
+/*----------------------------------------*/
+/*  23 - Components - Service
+/*----------------------------------------*/
+.service-area{
+    .service-nav{
+        padding: 90px 0 0;
+        .service-item{
+            position: relative;
+            text-align: center;
+            &:before{
+                background-color: $border-color;
+                content: "";
+                height: 32px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 1px;
+                transform: translateY(-50%);
+            }
+            @include breakpoint(max-sm_device){
+                &:before{
+                    display: none;
+                }
+            }
+            .content{
+                > h4{
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                > p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        [class*="col-"]{
+            &:last-child{
+                .service-item{
+                    &:before{
+                        background-color: transparent;
+                    }
+                }
+            }
+            &:not(:last-child){
+                .service-item{
+                    @include breakpoint(max-sm_device){
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

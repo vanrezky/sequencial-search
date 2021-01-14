@@ -1,0 +1,81 @@
+/*----------------------------------------*/
+/*  00 - Base - Typography
+/*----------------------------------------*/
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Rubik', sans-serif;
+	color: $text-color;
+	font-weight: 500;
+	line-height: 1;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.img-full {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+}
+
+a,
+button,
+i {
+	@extend %basetransition;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+button,
+button:focus,
+.btn,
+.btn:focus,
+input,
+input:focus,
+select,
+textarea {
+	text-decoration: none;
+	outline: 0;
+}
+
+button,
+.btn {
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	background: transparent;
+}
+
+.overflow-hidden{
+	overflow: hidden;
+}
